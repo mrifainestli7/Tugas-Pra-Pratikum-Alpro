@@ -53,4 +53,5 @@ int main(){
 	else {
 		cout<<"Input tidak valid";
 	}
+ return 0;
 }
