@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int input(int &x, int &y) {
-	cout<<"Bilangan Pertama: ";cin>>x;
-	cout<<"Bilangan Kedua: ";cin>>y;
+int input(int &x, int &y) 
+	cout<<"Bilangan Kedua: ";cin>>y
 }
 void menuTambah() {
 	int x,y;
