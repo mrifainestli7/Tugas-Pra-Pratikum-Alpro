@@ -7,26 +7,34 @@ int input(float &x, float &y) {
 }
 void menuTambah() {
 	float x,y;
+	float hasil;
 	input(x,y);
-	cout<<"Hasil "<<x<<" + "<<y<<" = "<<x+y<<endl;
+	hasil = x+y;
+	cout<<"Hasil "<<x<<" + "<<y<<" = "<<hasil<<endl;
 }
 
 void menuKurang() {
 	float x, y;
+	float hasil;
 	input(x,y);
-	cout<<"Hasil "<<x<<" - "<<y<<" = "<<x-y<<endl;
+	hasil = x-y;
+	cout<<"Hasil "<<x<<" - "<<y<<" = "<<hasil<<endl;
 }
 
 void menuKali() {
 	float x, y;
+	float hasil;
 	input(x,y);
-	cout<<"Hasil "<<x<<" X "<<y<<" = "<<x*y<<endl;
+	hasil = x*y;
+	cout<<"Hasil "<<x<<" X "<<y<<" = "<<hasil<<endl;
 }
 
 void menuBagi() {
 	float x, y;
+	float hasil;
 	input(x,y);
-	cout<<"Hasil "<<x<<" / "<<y<<" = "<<x/y<<endl;
+	hasil = x/y;
+	cout<<"Hasil "<<x<<" / "<<y<<" = "<<hasil<<endl;
 }
 
 int main(){
@@ -45,17 +53,20 @@ int main(){
 	cout<<"Pilih Menu No : ";cin>>pil;
 	if(pil == 1) {
 		menuTambah();
+		system("PAUSE");
 	}
 	else if(pil == 2) {
 		menuKurang();
+		system("PAUSE");
 	}
 	else if(pil == 3) {
 		menuKali();
+		system("PAUSE");
 	}
 	else if(pil == 4) {
 		menuBagi();
+		system("PAUSE");
 	}
-	system("PAUSE");
     }
     while (pil != 5);
 }
